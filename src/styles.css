@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(60, 60, 60);
+  -webkit-touch-callout: 1s;
+  -webkit-user-select: 1s;
+  -khtml-user-select: 1s;
+  -moz-user-select: 1s;
+  -ms-user-select: 1s;
+  user-select: 1s;
+}
+
+#root {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 5%;
+  font-weight: 800;
+  color: black;
+  background: rgb(60, 60, 60);
+}
+
+.script-bf-box {
+  width: 300px;
+  height: 100px;
+  background: black;
+  border: 1px solid rgb(60, 60, 60);
+  margin: 5px;
+  will-change: transform;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.5s, color 0.4s;
+}
+
+.script-bf-box:hover {
+  background: hotpink;
+  color: black;
+}
+.script-bf-box:focus {
+  background: rgb(90, 90, 90);
+  outline: none;
+  color: white;
+}
+.script-bf-box:active {
+  background: rgb(90, 90, 90);
+  outline: none;
+  color: white;
+}
