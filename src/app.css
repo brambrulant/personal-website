@@ -1,8 +1,12 @@
-@font-face {
-  font-family: "megafont";
-  src: url("./Megafont.ttf") format("truetype");
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: "Geo", sans-serif;
 }
-
 .nav {
-  font-family: megafont;
+  display: flex;
+  flex-direction: row;
+  padding-top: 2%;
+  position: fixed;
 }

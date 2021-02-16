@@ -5,7 +5,7 @@ import Projects from "./Components/Projects";
 import "./app.css";
 import "./styles.css";
 
-const items = ["ABOUT ME", "PROJECTS", "CONTACT"];
+const items = ["ABOUT ME", "PROJECTS"];
 let show;
 
 function App() {
@@ -25,22 +25,24 @@ function App() {
     show = <Contact />;
   }
   return (
-    <div className="container">
-      <div className="nav">
-        {items.map((item, i) => {
-          return (
-            <button
-              key={i}
-              className="script-bf-box"
-              onClick={() => onClickhandler(i)}
-            >
-              {item}
-            </button>
-          );
-        })}
+    <>
+      <div className="container">
+        <div className="nav">
+          {items.map((item, i) => {
+            return (
+              <button
+                key={i}
+                className="script-bf-box"
+                onClick={() => onClickhandler(i)}
+              >
+                {item}
+              </button>
+            );
+          })}
+        </div>
+        {show}
       </div>
-      {show}
-    </div>
+    </>
   );
 }
 
