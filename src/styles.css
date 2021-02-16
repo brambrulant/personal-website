@@ -44,16 +44,17 @@ body,
 }
 
 .script-bf-box:hover {
-  background: hotpink;
-  color: black;
+  background: rgb(90, 90, 90);
+  outline: none;
+  color: white;
 }
 .script-bf-box:focus {
-  background: rgb(90, 90, 90);
+  background: rgb(225, 143, 143, 255);
   outline: none;
-  color: white;
+  color: black;
 }
 .script-bf-box:active {
-  background: rgb(90, 90, 90);
+  background: rgb(225, 143, 143, 255);
   outline: none;
-  color: white;
+  color: black;
 }

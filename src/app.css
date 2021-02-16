@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "megafont";
+  src: url("./Megafont.ttf") format("truetype");
+}
+
+.nav {
+  font-family: megafont;
+}
