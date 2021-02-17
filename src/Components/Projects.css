@@ -1,0 +1,9 @@
+.projects {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin-top: 20%;
+}
+.h4 {
+  font-size: 100%;
+}
