@@ -3,10 +3,21 @@
   flex-direction: row;
   justify-content: center;
   font-family: "Geo", sans-serif;
+  transition: padding 1s;
 }
+
+.firstNav {
+  display: flex;
+  flex-direction: row;
+  padding-top: 20%;
+  position: fixed;
+  transition: padding 1s;
+}
+
 .nav {
   display: flex;
   flex-direction: row;
   padding-top: 2%;
   position: fixed;
+  transition: padding 1s;
 }

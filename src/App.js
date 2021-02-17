@@ -7,9 +7,11 @@ import "./styles.css";
 
 const items = ["ABOUT ME", "PROJECTS"];
 let show;
+let navClass = "nav";
+let buttonClass = "";
 
 function App() {
-  const [button, setButton] = useState(0);
+  const [button, setButton] = useState();
 
   const onClickhandler = (i) => {
     console.log("button", i, "clicked");
@@ -24,15 +26,23 @@ function App() {
   } else if (button === 2) {
     show = <Contact />;
   }
+
+  if (button === undefined) {
+    navClass = "firstNav";
+    buttonClass = "script-bf-box2";
+  } else {
+    navClass = "nav";
+    buttonClass = "script-bf-box";
+  }
   return (
     <>
       <div className="container">
-        <div className="nav">
+        <div className={navClass}>
           {items.map((item, i) => {
             return (
               <button
                 key={i}
-                className="script-bf-box"
+                className={buttonClass}
                 onClick={() => onClickhandler(i)}
               >
                 {item}
