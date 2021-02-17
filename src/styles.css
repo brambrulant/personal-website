@@ -20,17 +20,18 @@ body,
 }
 
 .script-bf-box {
-  width: 300px;
-  height: 100px;
+  width: 200px;
+  height: 50px;
   background: black;
   border: 1px solid rgb(60, 60, 60);
   margin: 5px;
   will-change: transform;
   cursor: pointer;
   color: white;
-  transition: background-color 0.5s, color 0.4s;
+  transition: background-color 0.5s, color 0.4s, width 1s, height 1s,
+    font-size 1s;
   font-family: "Press Start 2P", cursive;
-  font-size: 100%;
+  font-size: 80%;
 }
 
 .script-bf-box:hover {
@@ -44,6 +45,36 @@ body,
   color: black;
 }
 .script-bf-box:active {
+  background: rgb(225, 143, 143, 255);
+  outline: none;
+  color: black;
+}
+
+.script-bf-box2 {
+  width: 400px;
+  height: 100px;
+  background: black;
+  border: 1px solid rgb(60, 60, 60);
+  margin: 5px;
+  will-change: transform;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.5s, color 0.4s;
+  font-family: "Press Start 2P", cursive;
+  font-size: 150%;
+}
+
+.script-bf-box2:hover {
+  background: rgb(90, 90, 90);
+  outline: none;
+  color: white;
+}
+.script-bf-box2:focus {
+  background: rgb(225, 143, 143, 255);
+  outline: none;
+  color: black;
+}
+.script-bf-box2:active {
   background: rgb(225, 143, 143, 255);
   outline: none;
   color: black;
