@@ -1,0 +1,61 @@
+.card {
+  background-color: rgb(40, 40, 40);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 900px;
+  margin: 5px;
+  padding: 5px;
+  cursor: pointer;
+  color: white;
+  font-size: 150%;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s; /* Firefox < 16 */
+}
+
+.card-title {
+  font-family: "Press Start 2P", cursive;
+  text-align: center;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  background-color: rgb(225, 143, 143, 255);
+  color: black;
+}
+
+/* .container {
+  padding: 2px 16px;
+} */
+
+.readable-text {
+  font-family: "Cutive Mono", monospace;
+  font-size: 60%;
+}
