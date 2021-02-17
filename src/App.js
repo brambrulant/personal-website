@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./styles.css";
+
+const items = ["ABOUT ME", "PROJECTS", "CONTACT"];
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const [button, setButton] = useState();
+
+  const onClickhandler = (i) => {
+    console.log("button", i, "clicked");
+    setButton(i);
+  };
+  console.log(button);
+  return items.map((item, i) => {
+    return (
+      <button
+        key={i}
+        className="script-bf-box"
+        onClick={() => onClickhandler(i)}
+      >
+        {item}
+      </button>
+    );
+  });
 }
 
 export default App;
